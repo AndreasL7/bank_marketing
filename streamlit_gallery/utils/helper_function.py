@@ -107,6 +107,8 @@ def plot_continuous(df: pd.DataFrame,
         plt.tight_layout()
         plt.show()
         
+        plt.close('all')
+        
 def plot_categorical(df: pd.DataFrame, 
                      col: str, 
                      new_index: list = None) -> so:
