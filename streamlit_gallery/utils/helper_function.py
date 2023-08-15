@@ -191,6 +191,6 @@ def plot_label_features(df: pd.DataFrame,
                    color=str.capitalize,
                    title=f'{col} v. Deposit Outcome')
             .scale(y=so.Continuous().tick(at=[0, 1]))
-            .theme({"axes.prop_cycle": matplotlib.cycler(color=color_palette), "axes.facecolor": "w", "grid.color": "#ffffff"})
+            .theme({"axes.prop_cycle": matplotlib.cycler(color=color_palette + color_palette), "axes.facecolor": "w", "grid.color": "#ffffff"})
             .plot()
            )
